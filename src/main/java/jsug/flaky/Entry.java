@@ -1,4 +1,4 @@
-package jsug;
+package jsug.flaky;
 
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
@@ -21,4 +21,6 @@ public class Entry {
 
     @Column(columnDefinition = "binary(16)")
     private UUID memberId;
+
+
 }

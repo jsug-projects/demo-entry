@@ -1,22 +1,23 @@
-package jsug;
+package jsug.flaky;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
 
 @SpringBootApplication
-public class Application {
+public class FlakyEntriesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(FlakyEntriesApplication.class, args);
 	}
 
 	public CommandLineRunner commandLineRunner() {
-		return new CommandLineRunner() {
-			@Override
-			public void run(String... args) throws Exception {
+		return args -> {
 
-			}
-		};
+        };
 	}
+
+
 }
